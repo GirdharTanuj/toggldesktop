@@ -3,22 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:toggl="clr-namespace:TogglDesktop"
              xmlns:viewModels="clr-namespace:TogglDesktop.ViewModels"
              xmlns:converters="clr-namespace:TogglDesktop.Converters"
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
              xmlns:behaviours="http://metro.mahapps.com/winfx/xaml/shared"
              xmlns:behaviors="clr-namespace:TogglDesktop.Behaviors"
-             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              mc:Ignorable="d" 
              MinHeight="428" MinWidth="300"
              Background="{DynamicResource Toggl.CardBackground}"
              d:DataContext="{d:DesignInstance viewModels:LoginViewModel, IsDesignTimeCreatable=False}">
     <UserControl.Resources>
         <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../Resources/DesignUpdate/Controls.xaml" />
-            </ResourceDictionary.MergedDictionaries>
             <!-- ReSharper disable once Xaml.RedundantResource -->
             <Storyboard x:Key="RotateConfirmSpinner" BeginTime="00:00:00.000"
                         Duration="00:00:1.000" RepeatBehavior="Forever">
